@@ -1,16 +1,29 @@
-# addr_book
+# 📱 Flutter Technical Test App
 
-A new Flutter project.
+Este repositorio contiene el desarrollo de una aplicación móvil en **Flutter** como parte de una **prueba técnica**.  
 
-## Getting Started
+## 🚀 Tecnologías utilizadas
 
-This project is a starting point for a Flutter application.
+- [Flutter](https://flutter.dev/) 3.35.4
+- [Dart](https://dart.dev/)  3.9.2
+- Arquitectura **Feature-First** con principios de **Atomic Design**  
+- Manejo de dependencias con **pubspec.yaml**  
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ Configuración del entorno
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Asegúrate de tener instalado:  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK (versión estable actual, ej. `flutter --version`)  
+- Dart SDK  
+- Un emulador Android/iOS configurado, o un dispositivo físico  
+
+## ▶️ Ejecución de la app
+
+1. Clonar este repositorio:
+   ```bash
+   git clone https://github.com/almendezl/addr_book.git
+   cd addr_book
+   flutter pub get
+   flutter run
+
+
