@@ -85,4 +85,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get selectBirthDate => 'Please enter a date of birth';
+
+  @override
+  String get alert => 'Alert';
+
+  @override
+  String get deleteMessage => 'Are you sure you want to delete this?';
+
+  @override
+  String get delete => 'Delete';
 }

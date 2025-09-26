@@ -101,8 +101,42 @@ class _UserDetailPageState extends State<UserDetailPage> {
                                   municipality: a.municipality,
                                   details: a.details,
                                   onDelete: () {
-                                    context.read<UserBloc>().add(
-                                      DeleteAddressEvent(u.id, a.id),
+                                    showDialog(
+                                      context: context,
+                                      builder: (context) => AlertDialog(
+                                        title: Text(
+                                          AppLocalizations.of(context)!.alert,
+                                        ),
+                                        content: Text(
+                                          AppLocalizations.of(
+                                            context,
+                                          )!.deleteMessage,
+                                        ),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () =>
+                                                Navigator.of(context).pop(),
+                                            child: Text(
+                                              AppLocalizations.of(
+                                                context,
+                                              )!.cancel,
+                                            ),
+                                          ),
+                                          TextButton(
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                              context.read<UserBloc>().add(
+                                                DeleteAddressEvent(u.id, a.id),
+                                              );
+                                            },
+                                            child: Text(
+                                              AppLocalizations.of(
+                                                context,
+                                              )!.delete,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     );
                                   },
                                 );

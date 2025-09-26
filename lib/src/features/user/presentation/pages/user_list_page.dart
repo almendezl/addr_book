@@ -81,7 +81,30 @@ class _UserListPageState extends State<UserListPage> {
                     context.read<UserBloc>().add(LoadUsersEvent());
                   },
                   onDelete: () {
-                    context.read<UserBloc>().add(DeleteUserEvent(u.id));
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text(AppLocalizations.of(context)!.alert),
+                        content: Text(
+                          AppLocalizations.of(context)!.deleteMessage,
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.of(context).pop(),
+                            child: Text(AppLocalizations.of(context)!.cancel),
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                              context.read<UserBloc>().add(
+                                DeleteUserEvent(u.id),
+                              );
+                            },
+                            child: Text(AppLocalizations.of(context)!.delete),
+                          ),
+                        ],
+                      ),
+                    );
                   },
                 );
               },

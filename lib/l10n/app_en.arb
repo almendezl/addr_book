@@ -25,5 +25,8 @@
   "form8MinCharacter": "Must be at least 8 characters long",
   "form3MinCharacter": "Must be at least 3 characters long",
   "formMaxCharacter": "Must be no longer than 30 characters",
-  "selectBirthDate": "Please enter a date of birth"
+  "selectBirthDate": "Please enter a date of birth",
+  "alert": "Alert",
+  "deleteMessage": "Are you sure you want to delete this?",
+  "delete": "Delete"
 }

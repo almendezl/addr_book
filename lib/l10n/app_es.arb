@@ -25,6 +25,8 @@
   "form8MinCharacter": "Debe tener al menos 8 caracteres",
   "form3MinCharacter": "Debe tener al menos 3 caracteres",
   "formMaxCharacter": "Debe tener máximo 30 caracteres",
-  "selectBirthDate": "Seleccione una fecha de nacimiento"
-
+  "selectBirthDate": "Seleccione una fecha de nacimiento",
+  "alert": "Alerta",
+  "deleteMessage": "¿Estás seguro de que quieres eliminar esto?",
+  "delete": "Eliminar"
 }
